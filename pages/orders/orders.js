@@ -35,14 +35,6 @@ Component({
       new_price: '160.5',
       img: ["/images/cook.jpg"],
       totalnum: 20
-    }, {
-      id: 1212121212,
-      time: "2019年9月3日20:51:41",
-      states: '已完成',
-      old_price: '160.5',
-      new_price: '16.5',
-      img: ["/images/cook.jpg"],
-      totalnum: 2
     }]
   },
 
@@ -51,15 +43,34 @@ Component({
    */
   methods: {
     changeList: function(event) {
-      let _states = event.currentTarget.dataset.states;
+      let states_on = event.currentTarget.dataset.states;
       let that = this;
-      let _msg = that.data.states[_states]
-      if (_states === 'all') {
-        _msg = ''
+      let msg = that.data.states[states_on];
+      let list =[]
+      if (states_on === 'all') {
+        msg = ''
+        list = [{
+          id: 1212121212,
+          time: "2019年9月3日20:51:41",
+          states: '已完成',
+          old_price: '160.5',
+          new_price: '160.5',
+          img: ["/images/cook.jpg", "/images/cook.jpg"],
+          totalnum: 20
+        }, {
+          id: 1212121212,
+          time: "2019年9月3日20:51:41",
+          states: '已完成',
+          old_price: '160.5',
+          new_price: '160.5',
+          img: ["/images/cook.jpg"],
+          totalnum: 20
+        }]
       }
       that.setData({
-        states_on: _states,
-        msg: _msg
+        states_on,
+        msg,
+        list
       });
     }
   }
