@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "飞马购物网站",
+  "usingComponents": {
+    "footbar": "/pages/footbar/foot"
+    }
+}

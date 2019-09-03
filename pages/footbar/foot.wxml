@@ -1,0 +1,7 @@
+<!--pages/footbar/foot.wxml.wxml-->
+<view class="wx-foot-list">
+  <text class="wx-foot">首页</text>
+  <text class="wx-foot">商品列表</text>  
+  <text class="wx-foot">订单</text>  
+  <text class="wx-foot">我</text>  
+</view>

@@ -1,0 +1,86 @@
+/* pages/order_detail/order_detail.wxss */
+@import "/styles/common.wxss";
+@import "/styles/stylesheet.wxss";
+
+.content {
+  background-color: #fff;
+  margin: 10rpx 0;
+  font-size: 22rpx;
+  padding: 30rpx;
+}
+
+.content div {
+}
+
+.content div strong {
+  font-weight: bold;
+  font-size: 24rpx;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.content div span {
+  color: #999;
+}
+
+.content em.more i {
+  font-size: 50rpx;
+  margin-top: 60rpx;
+}
+
+.content-pay {
+  background-color: #fff;
+}
+
+.content-pay ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-pay li {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 30rpx;
+  border-bottom: #f3f3f3 solid 1rpx;
+}
+
+.content-pay li span {
+}
+
+.content-pay li em span {
+  margin-left: 10rpx;
+  color: #ffb12a;
+}
+
+.goods-list {
+}
+
+.goods-list ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-list li {
+  margin-top: 10rpx;
+}
+
+.goods-list span.name {
+  float: left;
+}
+
+.goods-list span.num {
+  float: right;
+  width: 60rpx;
+}
+
+.goods-list span.old-price {
+  float: right;
+  width: 80rpx;
+  text-align: right;
+}
+
+.goods-list span.new-price {
+  float: right;
+  width: 80rpx;
+  text-align: right;
+}

@@ -1,0 +1,64 @@
+<!--pages/order_detail/order_detail.wxml-->
+<view class="container order_detail">
+  <view class="content states clearfix">
+    <div class='fl'>
+      <strong>已完成</strong>
+      <span>您的订单已完成，欢迎下次惠顾</span>
+    </div>
+    <em class="more fr">更多状态</em>
+  </view>
+  <view class="content clearfix">
+    <div class='fl'>
+      <strong>用友软件园店</strong>
+      <span>您的订单已完成，欢迎下次惠顾</span>
+    </div>
+    <em class="more fr">
+      <i class='iconfont icon-phone'></i>
+    </em>
+  </view>
+  <view class="content-pay">
+    <ul>
+      <li class='clearfix'>
+        <span class='fl'>支付方式:</span>
+        <em class='fr'>微信支付</em>
+      </li>
+      <li class='clearfix'>
+        <span class='fl'>总价</span>
+        <em class='fr'>¥16.5</em>
+      </li>
+      <li class='clearfix'>
+        <span class='fl'>优惠</span>
+        <em class='fr'>- ¥2</em>
+      </li>
+      <li>
+        <em class='fr'>合计
+          <span>¥16.5</span>
+        </em>
+      </li>
+    </ul>
+  </view>
+  <view class="content goods-list">
+    <div>
+      <strong>商品明细</strong>
+      <ol>
+        <li class='clearfix'>
+          <span class="name">高纤奶酪软面包</span>
+          <span class="new-price">¥3.2</span>
+          <span class="old-price">¥3.6</span>
+          <span class="num">×1</span>
+        </li>
+        <li class='clearfix'>
+          <span class="name">高纤奶酪软面包</span>
+          <span class="new-price">¥3.2</span>
+          <span class="old-price">¥3.6</span>
+          <span class="num">×1</span>
+        </li>
+      </ol>
+    </div>
+  </view>
+  <view class="content">
+    <p>订单编号： 10098359206825</p>
+    <div class="h20"></div>
+    <p>下单时间： 2019年9月2日17:17:24</p>
+  </view>
+</view>

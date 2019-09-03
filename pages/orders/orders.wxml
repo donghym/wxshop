@@ -1,0 +1,50 @@
+<!--pages/orders/orders.wxml-->
+<view class="container orders">
+  <p>
+    <span wx:for="{{states}}" wx:for-index="key" wx:for-item="value" class="{{states_on===key?'on':''}}" data-states="{{key}}" bindtap="changeList">
+      {{value}}
+    </span>
+  </p>
+  <view class="orders-list" wx:if="{{list.length > 0}}">
+    <view class="orders-list-detail" wx:for="{{list}}" wx:for-index="key" wx:for-item="item">
+      <div class='clearfix orders-list-detail-top'>
+        <h3>门店</h3>
+        <span class='time'>{{item.time}}</span>
+        <span class='states'>{{item.states}}</span>
+      </div>
+      <view class="clearfix orders-list-detail-center">
+        <image class='fl' wx:for="{{item.img}}" wx:for-item="imgitem" src="{{imgitem}}" lazy-load/>
+        <div class='fr'>
+          <span class='price'>¥{{item.new_price}}</span>
+          <span class='num'>共{{item.totalnum}}件</span>
+        </div>
+      </view>
+      <div class='orders-list-detail-bottom'>
+        <navigator url="/pages/rated/rated?title=评价" class="orders-list-detail-bottom-btn" hover-class="navigator-hover">去评价</navigator>
+        <navigator url="/pages/order_detail/order_detail?title=详情" class="orders-list-detail-bottom-btn" hover-class="navigator-hover">查看详情</navigator>
+      </div>
+    </view>
+    <view class="orders-list-detail">
+      <div class='clearfix orders-list-detail-top'>
+        <h3>门店</h3>
+        <span class='time'>2019年9月2日17:00:11</span>
+        <span class='states'>已完成</span>
+      </div>
+      <view class="clearfix orders-list-detail-center">
+        <image class='fl' src="/images/cook.jpg" lazy-load/>
+        <div class='fr'>
+          <span class='price'>¥16.5</span>
+          <span class='num'>共2件</span>
+        </div>
+      </view>
+      <div class='orders-list-detail-bottom'>
+        <navigator url="/pages/rated/rated?title=评价" class="orders-list-detail-bottom-btn" hover-class="navigator-hover">去评价</navigator>
+        <navigator url="/pages/order_detail/order_detail?title=详情" class="orders-list-detail-bottom-btn" hover-class="navigator-hover">查看详情</navigator>
+      </div>
+    </view>
+  </view>
+  <view class="orders-list-none" wx:else>
+    <i class='iconfont icon-order'></i>
+    暂无{{msg}}订单
+  </view>
+</view>
